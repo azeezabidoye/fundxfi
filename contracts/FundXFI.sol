@@ -13,7 +13,7 @@ contract FundXFI {
     }
 
     function fund() external payable {
-        require(msg.value > minimumAmount, "Send some ETH");
+        require(msg.value > MINIMUM_AMOUNT, "Send some ETH");
 
         if (!hasFunded[msg.sender]) {
             hasFunded[msg.sender] = true;
