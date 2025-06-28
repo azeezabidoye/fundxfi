@@ -9,7 +9,7 @@ contract FundXFI {
     address[] private funders;
 
     constructor() {
-        owner = msg.sender;
+        i_owner = msg.sender;
     }
 
     function fund() external payable {
