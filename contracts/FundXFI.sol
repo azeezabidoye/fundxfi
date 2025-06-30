@@ -33,7 +33,6 @@ contract FundXFI {
             } // Save gas by skipping overflow check
         }
 
-        funders = new address[](0);
         payable(owner).transfer(address(this).balance);
     }
 
