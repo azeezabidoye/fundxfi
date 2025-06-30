@@ -34,7 +34,6 @@ contract FundXFI {
         }
 
         delete funders;
-        payable(owner).transfer(address(this).balance);
     }
 
     modifier onlyOwner() {
