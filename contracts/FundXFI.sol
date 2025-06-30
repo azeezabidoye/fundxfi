@@ -34,6 +34,10 @@ contract FundXFI {
         }
 
         delete funders;
+        (bool success, ) = payable(i_owner).call{value: address(this).balance}(
+            ""
+        );
+        require(success, "Withdraw failed");
     }
 
     modifier onlyOwner() {
