@@ -24,8 +24,6 @@ contract FundXFI {
     }
 
     function withdraw() public onlyOwner {
-        uint256 len = ;
-
         for (uint256 i = 0; i < funders.length; i++) {
             address funder = funders[i];
             addressToAmountFunded[funder] = 0;
