@@ -3,7 +3,7 @@ pragma solidity ^0.8.28;
 
 contract FundXFI {
     address public immutable i_owner;
-    // uint256 public constant MINIMUM_AMOUNT = 20 * 1e18; // ETH to Wei
+    uint256 public constant MINIMUM_AMOUNT = 20 * 1e18; // ETH to Wei
     mapping(address => uint256) public addressToAmountFunded;
     mapping(address => bool) private hasFunded;
     address[] private funders;
