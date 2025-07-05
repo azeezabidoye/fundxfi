@@ -2,7 +2,7 @@ const { ethers } = require("hardhat");
 
 async function main() {
   // Get the contract factory
-  const FundXFI = await ethers.getContractFactory("FundXFI");
+  // const FundXFI = await ethers.getContractFactory("FundXFI");
 
   console.log("Deploying FundXFI contract...");
   const fundxfi = await FundXFI.deploy(); // No constructor args needed
